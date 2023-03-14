@@ -3,6 +3,7 @@ from time import sleep
 from requests import get
 from random import choice
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
 # 随机请求头函数
 def headers_random():
@@ -87,3 +88,25 @@ def write_file(file_path, mode, data, encoding='utf-8'):
 def Write_pic(pic_path, data, mode='wb'):
     with open(file=pic_path, mode=mode, data=data) as p:
         p.write(data)
+
+# Edge_driver
+def Edge_driver(url):
+    driver = webdriver.Edge()
+    driver.implicitly_wait(30)
+    driver.get(url=url)
+    return driver
+
+# Chrome_driver
+def Chrome_driver(url):
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(30)
+    driver.get(url)
+    return driver
+
+# Firefox_driver
+def Firefox_driver(url):
+    driver = webdriver.Firefox()
+    driver.implicitly_wait(30)
+    driver.get(url)
+    return driver
+
