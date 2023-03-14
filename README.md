@@ -1,2 +1,9 @@
 # my_project
-files of my projects
+
+---
+
+Author: MoxingWanqian
+
+Email: moxingwanqian@hotmail.com
+
+---
