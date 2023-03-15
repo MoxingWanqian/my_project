@@ -113,7 +113,7 @@ def Firefox_driver(url):
 
 # 定时运行函数
 def wait_time(hour, min):
-    while tm().tm_hour == int(hour) and tm().tm_min < (int(min) - 3):
+    while tm().tm_hour <= int(hour) and tm().tm_min < (int(min) - 3):
         sleep(120)
     while tm().tm_hour == int(hour) and tm().tm_min < int(min):
         sleep(1)
