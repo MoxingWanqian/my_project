@@ -16,6 +16,8 @@ def start_YuanShen():
 
 # 登录
 def login_enter():
+    time.sleep(5)
+    lackey.wait(r'YuanShen\YuanShen_photos\YuanShen_login.png')
     if lackey.wait(r'YuanShen\YuanShen_photos\YuanShen_login.png'):
         lackey.click(r'YuanShen\YuanShen_photos\YuanShen_login.png')
 
@@ -47,5 +49,5 @@ def go_to_MenDe():
 # 前往蒙德合成台
 
 # start_YuanShen()
-# login_enter()
-go_to_MenDe()
+login_enter()
+# go_to_MenDe()
