@@ -31,8 +31,9 @@ def data_window():
 def home_wimdow():
     f = open('./seatId_dict.txt', 'r', encoding='utf-8')
     seatId_dict = eval(f.read())
-    l = [1, 2, 3]
-    layout = [sg.List()]
+    layout = [
+        
+    ]
     window = sg.Window(title='预约信息修改', layout=layout)
     event, valuse = window.read()
     if event not in (None, 'Exit'):
@@ -41,5 +42,6 @@ def home_wimdow():
         return None
 
 if __name__ == '__main__':
-    users = users_window()
-    # home_wimdow()
+    # users = users_window()
+    sg.List()
+    home_wimdow()
